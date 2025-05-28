@@ -1,0 +1,136 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+
+  &.scrolling-down {
+    .top-header {
+      opacity: 0;
+      min-height: 0;
+      height: 0;
+      padding: 0;
+    }
+
+    .header {
+      .logo {
+        top: 0;
+      }
+    }
+  }
+
+  &.scrolled {
+    .header {
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  .top-header {
+    background-color: $kleur1;
+    padding: 9px 0;
+    min-height: 77px;
+    height: auto;
+    @include transition();
+
+    @media(max-width: $screen-navigation-max) {
+      min-height: 30px;
+      padding: 5px 0;
+    }
+
+    .top-header-content {
+      @include ycenter();
+
+      @media(max-width: $screen-navigation-max) {
+        display: none;
+      }
+
+      .partner-logo {
+        @media(max-width: $screen-container-max) {
+          display: none;
+        }
+      }
+
+      .buttons {
+        margin-left: auto;
+
+        ul{
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          @include ycenter();
+
+          li {
+           margin: 0;
+            &.active {
+              color: $kleur2;
+            }
+
+            &:last-of-type{
+              a{
+                background-color: $white;
+                color: black;
+              }
+            }
+
+            a{
+              font-weight: bold;
+              padding: 15px 35px;
+              font-size: 18px;
+              font-weight: 400;
+              transition: .4s all;
+              background-color: $kleur1;
+              color: $white;
+              text-decoration: none;
+              border-radius: 5px;
+              display: inline-flex;
+              align-items: baseline;
+              border: 0;
+              @include transition();
+
+              &:hover{
+                opacity: .8;
+              }
+            }
+          }
+        }
+
+     
+      }
+    }
+  }
+
+  .header {
+    background-color: $white;
+
+    .col-6 {
+      position: relative;
+    }
+
+    .logo {
+      background-color: $white;
+      padding: 25px;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+      position: absolute;
+      top: -78px;
+      left: 15px;
+      width: calc(100% - 30px);
+      text-decoration: none;
+      z-index: 300;
+      // width: 100%;
+      aspect-ratio: 4/3;
+      height: auto;
+      @include center();
+      @include transition();
+
+      @media(max-width: $screen-navigation-max) {
+        top: -30px;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

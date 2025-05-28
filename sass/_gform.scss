@@ -1,0 +1,17 @@
+.gform_validation_errors {
+  display: none !important;
+}
+
+.gform_button {
+  background-color: #c10b25 !important;
+}
+
+.gform_wrapper input:focus,
+.gform_wrapper select:focus,
+.gform_wrapper textarea:focus {
+  border-color: #c10b25 !important;
+  box-shadow: 0 0 5px #c10b25 !important; /* Optional: Add a glow effect */
+}
+.gform_fields {
+  row-gap: 10px !important;
+}

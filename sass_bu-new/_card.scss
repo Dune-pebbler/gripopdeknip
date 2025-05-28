@@ -1,0 +1,123 @@
+
+/* news page css */
+.news_row {
+    margin-top: 250px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .news_row {
+      margin-top: 150px;
+    }
+  }
+  
+  .home_news {
+    margin-top: 0px;
+  }
+  
+  .news-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .news-card:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  
+  .news-card:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  .news-card__content__date {
+    margin: 5px 0px;
+  }
+  
+  .news-card__link {
+    text-decoration: none;
+    color: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .news-card__image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .news-card__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  .news-card__content {
+    padding: 15px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+  }
+  
+  .news-card__content__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .news-card__content__excerpt {
+    display: block;
+    margin-top: auto;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .paginate_links {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .paginate_links .page-numbers {
+    position: relative;
+    z-index: 1;
+  }
+  

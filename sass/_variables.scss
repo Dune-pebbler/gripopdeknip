@@ -1,0 +1,59 @@
+// ----------------------- MAIN COLORS ----------------------- //
+
+$black: #000;
+$white: #fff;
+
+$bg-color: #ffffff;
+$text-color: #CCC;
+
+$kleur1: #C10B25;
+$kleur2: #646363;
+$kleur3: #EF7D00;
+
+$kleur1-opacitized: rgba(193, 11, 37, .1);
+
+$whatsapp-color: #25D366;
+
+// ----------------------- SIZES ----------------------- //
+
+$screen-xs-max: 576px;
+$screen-sm-max: 768px;
+$screen-md-max: 992px;
+$screen-lg-max: 1199px;
+$screen-xl-max: 1340px;
+
+
+// ---------------------- breakpoints ------------------ //
+$screen-container-max: 1408px;
+$screen-navigation-max: $screen-md-max;
+
+
+// ----------------------- FONTS ----------------------- //
+
+$font: acumin-pro,
+sans-serif;
+$h-font: acumin-pro,
+sans-serif;
+$write-font: eldwin-script,
+sans-serif;
+
+/*@font-face {
+  font-family: 'font';
+  src: url("../fonts/font.eot");  IE9 Compat Modes 
+  src: url('../fonts/font.eot?#iefix') format('embedded-opentype'),  IE6-IE8 
+       url('../fonts/font.woff2') format('woff2'),  Super Modern Browsers 
+       url('../fonts/font.woff') format('woff'),  Pretty Modern Browsers 
+       url('../fonts/font.ttf')  format('truetype');  Safari, Android, iOS 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font';
+  src: url("../fonts/font-bold.eot");  IE9 Compat Modes 
+  src: url('../fonts/font-bold.eot?#iefix') format('embedded-opentype'),  IE6-IE8 
+       url('../fonts/font-bold.woff2') format('woff2'),  Super Modern Browsers 
+       url('../fonts/font-bold.woff') format('woff'),  Pretty Modern Browsers 
+       url('../fonts/font-bold.ttf')  format('truetype');  Safari, Android, iOS 
+ font-weight: bold;
+}*/
