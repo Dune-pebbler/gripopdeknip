@@ -60,26 +60,26 @@ $partner_query = new WP_Query(['post_type' => 'partners', 'posts_per_page' => -1
   <!-- old "textbackdrop" -->
   <?php /* if ($partner_query->have_posts()): ?>
 <div class="logos">
-   <h2 class="text-backdrop">
-       SAMENWERKINGS <br />
-       PARTNERS
-   </h2>
-   <div class="container">
-       <div class="logo-slider owl-theme owl-carousel">
-           <?php while ($partner_query->have_posts()):
+<h2 class="text-backdrop">
+  SAMENWERKINGS <br />
+  PARTNERS
+</h2>
+<div class="container">
+  <div class="logo-slider owl-theme owl-carousel">
+      <?php while ($partner_query->have_posts()):
 $partner_query->the_post(); ?>
-           <div class="slide">
-               <?php if ($image = get_the_post_thumbnail_url(get_the_ID(), 'full')): ?>
-               <?php if (is_svg($image)): ?>
-               <?= get_svg($image); ?>
-               <?php else: ?>
-               <img src="<?= get_webp($image); ?>" alt="<?php the_title(); ?>" loading="lazy">
-               <?php endif; ?>
-               <?php endif; ?>
-           </div>
-           <?php endwhile; ?>
-       </div>
-   </div>
+      <div class="slide">
+          <?php if ($image = get_the_post_thumbnail_url(get_the_ID(), 'full')): ?>
+          <?php if (is_svg($image)): ?>
+          <?= get_svg($image); ?>
+          <?php else: ?>
+          <img src="<?= get_webp($image); ?>" alt="<?php the_title(); ?>" loading="lazy">
+          <?php endif; ?>
+          <?php endif; ?>
+      </div>
+      <?php endwhile; ?>
+  </div>
+</div>
 </div>
 <?php endif; */ ?>
 
@@ -98,7 +98,7 @@ $partner_query->the_post(); ?>
           <h3></h3>
           <?php wp_nav_menu(['theme_location' => 'footer-3']); ?>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-3">
           <h3></h3>
           <p>
             Conradstraat 8 <br />
@@ -114,7 +114,9 @@ $partner_query->the_post(); ?>
                 class="fab fa-facebook"></i></a>
           </div>
         </div>
-
+        <div class="col-12 col-lg-1">
+          <a class="btn alternative" href="https://www.gripopdeknipkatwijk.nl/nieuwsbrief/">AANMELDEN NIEUWSBRIEF</a>
+        </div>
       </div>
     </div>
   </div>
