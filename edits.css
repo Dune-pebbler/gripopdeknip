@@ -1,0 +1,23 @@
+/* Custom edits for specific components */
+
+.nieuwsbrief-button-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nieuwsbrief-button-container a {
+  background-color: #c10b25;
+  padding: 15px 35px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.nieuwsbrief-button-container a:hover {
+  background-color: #fff;
+  color: #c10b25;
+  text-decoration: none;
+}
